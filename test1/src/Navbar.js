@@ -21,10 +21,10 @@ const Navbar = () => {
       display: 'flex',
       gap: '1rem'
     }}>
-      <button onClick={() => scrollToSection('div1')}>Div 1</button>
-      <button onClick={() => scrollToSection('div2')}>Div 2</button>
-      <button onClick={() => scrollToSection('div3')}>Div 3</button>
-      <button onClick={() => scrollToSection('div4')}>Div 4</button>
+      <button onClick={() => scrollToSection('div1')}>Hem</button>
+      <button onClick={() => scrollToSection('div2')}>Avsnitt 1</button>
+      <button onClick={() => scrollToSection('div3')}>Avsnitt 2</button>
+      <button onClick={() => scrollToSection('div4')}>Avsnitt 3</button>
     </div>
   );
 };

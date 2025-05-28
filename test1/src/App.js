@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Div1 from './Div1';
-import Div2 from './Div2';
-import Div3 from './Div3';
-import Div4 from './Div4';
+import Div1 from './components/Div1';
+import Div2 from './components/Div2';
+import Div3 from './components/Div3';
+import Div4 from './components/Div4';
 
 function App() {
   return (

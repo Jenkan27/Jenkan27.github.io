@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import '../css/Navbar.css';
+import Button from '@mui/material/Button';
 
 const scrollToSection = (id) => {
   const element = document.getElementById(id);
@@ -8,13 +9,69 @@ const scrollToSection = (id) => {
   }
 };
 
+const sections = ['div1', 'div2', 'div3', 'div4'];
+
 const Navbar = () => {
+  const [activeSection, setActiveSection] = useState('');
+  const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (let entry of entries) {
+          if (entry.isIntersecting) {
+            // Clear any existing timeout
+            if (timeoutRef.current) {
+              clearTimeout(timeoutRef.current);
+            }
+
+            // Set a new timeout to delay updating state
+            timeoutRef.current = setTimeout(() => {
+              setActiveSection(entry.target.id);
+            }, 300); // 0.3 second delay
+
+            break;
+          }
+        }
+      },
+      {
+        threshold: 0.9,
+      }
+    );
+
+    sections.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      observer.disconnect();
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="navbar">
-      <button onClick={() => scrollToSection('div1')}>Hem</button>
-      <button onClick={() => scrollToSection('div2')}>Avsnitt 1</button>
-      <button onClick={() => scrollToSection('div3')}>Avsnitt 2</button>
-      <button onClick={() => scrollToSection('div4')}>Avsnitt 3</button>
+      <div className="button-group">
+        {sections.map((id, index) => (
+          <Button
+            style={{
+            border: activeSection === id ? '1px solid rgba(255, 255, 255, 0.16)' : '1px solid transparent',
+            borderRadius: '4px',
+            padding: '6px 16px',
+            boxSizing: 'border-box',
+            }}
+            color={'black'}
+            key={id}
+            variant={activeSection === id ? 'outlined' : 'text'}
+            onClick={() => scrollToSection(id)}
+          >
+            {['Hem', 'Avsnitt 1', 'Avsnitt 2', 'Avsnitt 3'][index]}
+          </Button>
+        ))}
+      </div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Div1 = () => {
         <img src={profilbild} alt="bild på jens holm"></img>
         <h4>Jens Holm</h4>
         <p>Nyfiken, jobbsökande</p>
-        <p>Högskoleexamen inom Mjukaruutveckling</p>
+        <p>Högskoleexamen inom Mjukvaruutveckling</p>
         <p>Gymnasieexamen inom Ekonomi</p>
       </div>
       <div className='divRight'>

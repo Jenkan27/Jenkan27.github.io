@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jensholm.com/test1",
-  "name": "test1",
+  "homepage": "https://jensholm.com/v2",
+  "name": "v2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

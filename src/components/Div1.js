@@ -12,7 +12,7 @@ const Div1 = () => {
       </div>
       <div className='divRight'>
         <h1>Hej, Jens här!</h1>
-        <p> Skrolla eller använd navigeringsmenyn för att läsa mer om mina avsnitt.</p>
+        <p> Skrolla eller använd navigeringsmenyn för att läsa mer om mina avsnitt</p>
       </div>
     </div>
   );

@@ -63,7 +63,7 @@ const Navbar = () => {
             <Button
               style={{
               border: activeSection === id ? '1px solid rgba(255, 255, 255, 0.68)' : '1px solid transparent',
-              borderRadius: '4px',
+              borderRadius: '2px',
               padding: '2px 6px',
               boxSizing: 'border-box',
               }}

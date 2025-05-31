@@ -1,12 +1,31 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../css/Navbar.css';
 import Button from '@mui/material/Button';
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+import { ImMail } from "react-icons/im";
 
 const scrollToSection = (id) => {
   const element = document.getElementById(id);
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
+};
+
+const SocialLinks = () => {
+  return (
+    <div className="social-links">
+      <a href="https://www.linkedin.com/in/jens-holm-240ba5283/" target="_blank" rel="noopener noreferrer" title="https://www.linkedin.com/in/jens-holm-240ba5283/">
+        <FaLinkedin size={24} />
+      </a>
+      <a href="https://github.com/Jenkan27" target="_blank" rel="noopener noreferrer" title="https://github.com/Jenkan27">
+        <FaGithubSquare size={24} />
+      </a>
+      <a href="mailto:holmjens84@gmail.com" title="holmjens84@gmail.com">
+        <ImMail size={24} />
+      </a>
+    </div>
+  );
 };
 
 const sections = ['div1', 'div2', 'div3', 'div4'];
@@ -57,6 +76,9 @@ const Navbar = () => {
       <div className="navbar-inner">
         <div className='name'>
           <p>Jens Holm</p>
+        </div>
+        <div className='SL'>
+        <SocialLinks />
         </div>
         <div className="button-group">
           {sections.map((id, index) => (

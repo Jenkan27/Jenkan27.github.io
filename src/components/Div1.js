@@ -7,7 +7,6 @@ const Div1 = () => {
     <div className='div1' id='div1'>
       <div className='divLeft'>
         <img src={profilbild} alt="bild på jens holm"></img>
-        <h4>Jens Holm</h4>
         <p>Nyfiken, jobbsökande</p>
         <p>Högskoleexamen inom Mjukvaruutveckling</p>
         <p>Gymnasieexamen inom Ekonomi</p>

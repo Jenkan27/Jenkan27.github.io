@@ -41,6 +41,13 @@
 }
 
 .SL {
-  margin-left: 8rem;
+  margin-left: 1.5rem;
 }
 
+@media (max-width: 850px) {
+
+  .button-group {
+    display: none;
+  }
+
+}

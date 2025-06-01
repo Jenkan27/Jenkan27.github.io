@@ -50,3 +50,23 @@ img {
   color: inherit;         /* <- This makes it match surrounding text */
   font: inherit;          /* <- This ensures same font and size */
 }
+
+@media (max-width: 850px) {
+
+  .div1 {
+    flex-direction: column;
+    
+  }  
+  
+  .divLeft {
+    min-width: 90%;
+    padding-inline: auto;
+  }
+
+  .divRight {
+    min-width: 90%;
+    padding-inline: auto;
+  }
+  
+
+}

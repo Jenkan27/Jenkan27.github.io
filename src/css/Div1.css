@@ -1,9 +1,10 @@
 .div1 {
     width: 100%;
     min-height: 70vh;
-    margin-top: 8rem;
+    margin-top: 7rem;
     display: flex;
-    padding-inline: 5%;
+    padding-block: 2%;
+    padding-inline: 2%;
     background-color: rgba(0, 0, 0, 0.015);
     gap: 5%;
     /*align-items: center;*/
@@ -40,4 +41,12 @@ img {
 
 .divRight {
     max-width: 65%
+}
+
+.readMoreLink {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 5px;
+  color: inherit;         /* <- This makes it match surrounding text */
+  font: inherit;          /* <- This ensures same font and size */
 }

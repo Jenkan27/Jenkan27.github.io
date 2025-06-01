@@ -4,13 +4,8 @@ import Button from '@mui/material/Button';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { ImMail } from "react-icons/im";
+import { scrollToSection } from '../utils/scrollUtils';
 
-const scrollToSection = (id) => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-};
 
 const SocialLinks = () => {
   return (
@@ -94,7 +89,7 @@ const Navbar = () => {
               variant={activeSection === id ? 'outlined' : 'text'}
               onClick={() => scrollToSection(id)}
             >
-              {['Hem', 'Avsnitt 1', 'Avsnitt 2', 'Avsnitt 3'][index]}
+              {['Hem', 'Utbildning', 'Avsnitt 2', 'Avsnitt 3'][index]}
             </Button>
           ))}
         </div>

@@ -16,3 +16,9 @@
   width: 90%;
   margin-inline: auto;
 }
+
+@media (max-width: 850px) {
+  .wrapper-inner {
+    width: 100%;
+  }
+}

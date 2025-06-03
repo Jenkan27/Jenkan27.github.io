@@ -4,7 +4,7 @@ import Div1 from './components/Div1';
 import Div2 from './components/Div2';
 import Div3 from './components/Div3';
 import Div4 from './components/Div4';
-import './App.css';
+import './css/App.css';
 
 function App() {
   return (

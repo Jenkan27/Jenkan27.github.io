@@ -9,6 +9,7 @@
 .navbar-inner {
   width: 90%;
   margin-inline: auto;
+  max-width: 1600px;
   display: flex;
   align-items: center;
   background-color: rgb(43, 107, 44);

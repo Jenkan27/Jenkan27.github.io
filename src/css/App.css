@@ -15,6 +15,7 @@
 .wrapper-inner {
   width: 90%;
   margin-inline: auto;
+  max-width: 1600px;
 }
 
 @media (max-width: 850px) {

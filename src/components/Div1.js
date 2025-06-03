@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Div1.css';
-import profilbild from '../images/profilbild.JPG';
+import profilbild from '../images/profilbild3.jpg';
 import { scrollToSection } from '../utils/scrollUtils';
 
 const Div1 = () => {

@@ -46,8 +46,12 @@
 }
 
 .pdf-viewer {
-  width: 80%;
+  width: 100%;
   height: 35rem;
+}
+
+.mobile-fallback {
+  display: none;
 }
 
 @media (max-width: 850px) {
@@ -73,14 +77,24 @@
   }  
   
   .left {
-    min-width: 90%;
+    min-width: 100%;
     padding-inline: auto;
   }
 
   .right {
-    min-width: 90%;
+    min-width: 100%;
     padding-inline: auto;
   }
   
+  .pdf-viewer {
+    width: 100%;
+    height: 30rem;
+  }
+  
+  .mobile-fallback {
+    display: block;
+    text-decoration: none;
+  }
+
 
 }

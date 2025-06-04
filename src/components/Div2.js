@@ -38,6 +38,12 @@ const Div2 = () => {
         />
       </div>
 
+      <div className='mobile-fallback'>
+        <a href="/pdfs/Fasen_sa_dyrt_allt_ar!_G.A_Jens_Holm_Ek20.pdf" target="_blank" rel="noopener noreferrer">
+          Visa PDF-dokument
+        </a>
+      </div>
+
     </div>
   
   </div>

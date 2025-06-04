@@ -28,6 +28,7 @@ const Div2 = () => {
         <h2>Ekonomi</h2>
         <p>Vasagymnasiet, 2020-2023</p>
         <p>Grundläggande kunskaper inom ekonomi och företagande.</p>
+        <p>Nedan visas mitt gymnasiearbete, en undersökande rapport om inflationen</p>
       </div>
 
       <div className="pdf-container">

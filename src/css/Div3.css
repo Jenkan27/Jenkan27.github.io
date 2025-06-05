@@ -9,3 +9,9 @@
   font-size: 2rem;
   scroll-margin-top: 80px;
 }
+
+@media (max-width: 850px) {
+  .div3 {
+    display: none;
+  }
+}

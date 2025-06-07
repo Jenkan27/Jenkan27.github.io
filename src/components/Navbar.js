@@ -49,7 +49,7 @@ const Navbar = () => {
         }
       },
       {
-        threshold: 0.9,
+        threshold: 0.6,
       }
     );
 

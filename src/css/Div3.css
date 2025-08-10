@@ -1,17 +1,65 @@
 .div3 {
-  width: 100%;
-  height: 70vh;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-  margin: 7rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  scroll-margin-top: 80px;
+    width: 100%;
+    min-height: 60vh;
+    margin-top: 7rem;
+    display: flex;
+    padding-block: 2%;
+    padding-inline: 2%;
+    /*background-color: rgba(0, 0, 0, 0.015);*/
+    gap: 5%;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    font-size: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    scroll-margin-top: 80px;
+    box-sizing: border-box;
+}
+
+.div3 .divRight{
+    display: grid;
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    /*box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);*/
+    /*margin-bottom: auto;*/
+    /*align-items: center;*/
+    place-items: center;
+    max-width: 45%;
+}
+
+.div3 img {
+  max-width: 95%;
+  border-radius: 2%;
+}
+
+.div3 .divLeft {
+    max-width: 55%
+}
+
+.readMoreLink {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 5px;
+  color: inherit;         /* <- This makes it match surrounding text */
+  font: inherit;          /* <- This ensures same font and size */
 }
 
 @media (max-width: 850px) {
+
   .div3 {
-    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+  }  
+  
+  .div3 .divLeft {
+    min-width: 90%;
+    padding-inline: auto;
   }
+
+  .div3 .divRight {
+    min-width: 90%;
+    padding-inline: auto;
+  }
+  
+
 }

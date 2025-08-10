@@ -1,46 +1,58 @@
-.div3 {
-    width: 100%;
-    min-height: 60vh;
-    margin-top: 7rem;
-    display: flex;
-    padding-block: 2%;
-    padding-inline: 2%;
-    /*background-color: rgba(0, 0, 0, 0.015);*/
-    gap: 5%;
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    font-size: 1rem;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    scroll-margin-top: 80px;
-    box-sizing: border-box;
+ .div3 {
+  width: 100%;
+  min-height: 70vh;
+  padding-inline: 3rem;
+  padding-bottom: 3rem;
+  margin: 7rem auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  scroll-margin-top: 80px;
 }
 
-.div3 .divRight{
-    display: grid;
-    /*background-color: rgba(255, 255, 255, 0.7);*/
-    /*box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);*/
-    /*margin-bottom: auto;*/
-    /*align-items: center;*/
-    place-items: center;
-    max-width: 45%;
+.header{
+  width: 100%;
+  height: 15%;
+
 }
 
-.div3 img {
-  max-width: 95%;
-  border-radius: 2%;
+.content-row {
+  display: flex;          /* Place left and right side by side */
+  height: 85%;            /* Adjust as needed */
+  width: 100%;
+  gap: 3rem; /* Space between rows */
 }
 
-.div3 .divLeft {
-    max-width: 55%
+.left {
+  padding-inline: 2rem;
+  padding-bottom: 2rem;
+  height: 95%;
+  width: 55%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
 }
 
-.readMoreLink {
-  text-decoration: underline;
-  cursor: pointer;
-  margin-left: 5px;
-  color: inherit;         /* <- This makes it match surrounding text */
-  font: inherit;          /* <- This ensures same font and size */
+.right {
+  padding-inline: 2rem;
+  padding-bottom: 2rem;
+  height: 95%;
+  width: 45%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-container {
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 50vh;
+}
+
+.mobile-fallback {
+  display: none;
 }
 
 @media (max-width: 850px) {
@@ -48,18 +60,42 @@
   .div3 {
     flex-direction: column;
     align-items: center;
-    
+    padding-inline: 0;
+  }
+
+  .header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-row {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
   }  
   
-  .div3 .divLeft {
-    min-width: 90%;
+  .left {
+    min-width: 100%;
     padding-inline: auto;
   }
 
-  .div3 .divRight {
-    min-width: 90%;
+  .right {
+    min-width: 100%;
     padding-inline: auto;
   }
   
+  .pdf-viewer {
+    width: 100%;
+    height: 30rem;
+  }
+  
+  .mobile-fallback {
+    display: block;
+    text-decoration: none;
+  }
+
 
 }

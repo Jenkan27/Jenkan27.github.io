@@ -89,7 +89,7 @@ const Navbar = () => {
               variant={activeSection === id ? 'outlined' : 'text'}
               onClick={() => scrollToSection(id)}
             >
-              {['Hem', 'Utbildning', 'Bilförsäljning', 'Om Hemsidan'][index]}
+              {['Hem', 'Bilförsäljning', 'Utbildning', 'Om Hemsidan'][index]}
             </Button>
           ))}
         </div>

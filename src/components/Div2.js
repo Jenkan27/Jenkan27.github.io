@@ -1,54 +1,22 @@
 import React from 'react';
 import '../css/Div2.css';
-import CourseTable from './table.js';
+import bild from '../images/temp-img.jpg';
 
 const Div2 = () => {
   return (
-<div id='div2' className="div2">
-  <div className="header">
-    <h1>Utbildning</h1>
-
-  </div>
-  
-  <div className="content-row">
-    
-    <div className="left">
-      <div className="education-item">
-        <h2>Pythonutvecklare inriktning AI</h2>
-        <p>Teknikhögskolan, 2023-2025</p>
-        <p>En bred utbildning inom mjukvaruutveckling med fokus på AI-teknologier.</p>
+    <div className='div2' id='div2'>
+      <div className='divLeft'>
+        <h1>Framtidens bilförsäljare</h1>
+        
+        <p>Jag söker min nästa spännande möjlighet i yrkeslivet och med mina goda kunskaper inom fordon, ekonomi, teknik och försäljning så anser jag att en tjänst som bilförsäljare hade passat mig perfekt.</p>
+        <p>Under min gymnasieexamen lärde jag mig företagsekonomins grunder, både teoretiska vinstplaner och det praktiska säljandet. Jag har även inom mina 3 tidigare försäljningsjobb utvidgat mina kunskaper inom kundrelationer och ofta fått beröm av min förmåga att känna av kunden och bidra med värde.</p>
+        <p>Mina tekniska kunskaper är i framkant, tack vare att jag har en nyfikenhet och en tro på att man kan skapa otroliga saker med digitala medel i dagens värld. Jag har jobbat på ett tech-startup i 5 månader där jag utvecklade funktioner från ide och värdeplan till färdig kundprodukt med positiv feedback. Även här utvecklade jag mina kunskaper att förstå kunden och ge ett resultat som bidrog med värde både för mitt och kundens företag.</p>
+        <p>Fordon är något som krävs i ett aktivt liv idag, och valet på fordon är viktigt. Jag har köpt och sålt flera bilar privat, även reparerat mina egna bilar vid behov och har byggt ut kunskaper om vad man behöver i en bilaffär. Man vill kunna lita på att bilen gör det den ska, att bilen ger dig de känslor du förväntar dig, varesig det är spänning eller säkerhet. Och att förmedla det i en annons och på plats till en potentiell köpare är någon jag tycker är roligt och givande.</p>
       </div>
-
-      <CourseTable />
-
+      <div className='divRight'>
+        <img src={bild} alt="generic carsalesman"></img>
+      </div>
     </div>
-    
-    <div className="right">
-        <div className="education-item">
-        <h2>Ekonomi</h2>
-        <p>Vasagymnasiet, 2020-2023</p>
-        <p>Grundläggande kunskaper inom ekonomi och företagande. Nedan visas mitt gymnasiearbete, en undersökande rapport om inflationen.</p>
-      </div>
-
-      <div className="pdf-container">
-        <iframe
-          src="/pdfs/Fasen_sa_dyrt_allt_ar!_G.A_Jens_Holm_Ek20.pdf"
-          title="Examensarbete PDF"
-          className="pdf-viewer"
-        />
-      </div>
-
-      <div className='mobile-fallback'>
-        <a href="/pdfs/Fasen_sa_dyrt_allt_ar!_G.A_Jens_Holm_Ek20.pdf" target="_blank" rel="noopener noreferrer">
-          Visa PDF-dokument
-        </a>
-      </div>
-
-    </div>
-  
-  </div>
-
-</div>
   );
 };
 
